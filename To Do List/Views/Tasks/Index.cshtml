@@ -1,0 +1,93 @@
+﻿@model IEnumerable<To_Do_List.Models.Tasks>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Your To Do List</h2>
+
+<p>
+    @Html.ActionLink("New Task", "Create")
+</p>
+
+<ul>
+
+    @foreach (var item in Model)
+    {
+        <li>
+            <!-- checkbox for if task is complete or not -->
+            <form method="post" action="@Url.Action("SetDone", new {id = item.TaskID})">
+                <button class="mark-done">
+                    @if (item.TaskDone)
+                    {
+                        <span class="glyphicon glyphicon-check"></span>
+                    }
+                    else
+                    {
+                        <span class="glyphicon glyphicon-unchecked"></span>
+                    }
+                </button>
+                @Html.Hidden("TaskDone", !item.TaskDone)
+            </form>
+
+            <!-- Task Name -->
+            @Html.DisplayFor(modelItem => item.TaskName)
+
+            <!-- display for due date and time -->
+            @{
+                <!-- display date in nice format -->
+                if (item.DueDate != null)
+                {
+                    var dueDate = (DateTime)item.DueDate;
+                    if (dueDate.Date == DateTime.Today)
+                    {
+                        @:Today
+                    }
+                    else if (dueDate.Date == DateTime.Today.AddDays(1))
+                    {
+                        @:Tomorrow
+                    }
+                    else if (dueDate.Date < DateTime.Today)
+                    {
+                        var overdueDays = dueDate.Subtract(DateTime.Today);
+                        @:Overdue by
+                        @Html.DisplayFor(modelItem => item.DaysPastDue)
+                        @:days
+                    }
+                    else if (dueDate.Date < DateTime.Today.AddDays(7))
+                    {
+                        @dueDate.DayOfWeek
+                    }
+                    else if (dueDate.Date > DateTime.Today.AddYears(1))
+                    {
+                        @:A long time
+                    }
+                    else
+                    {
+                        @dueDate.ToString("MMMM d")
+                    }
+                }
+                <!-- display time tbc -->
+            }
+
+            @*@Html.ActionLink("Edit", "Tasks", new { id = item.TaskID })*@
+
+            <!-- button to edit task -->
+            <a href="@Url.Action("Edit","Tasks", new { id = item.TaskID })">
+                <span class="glyphicon glyphicon-pencil"></span>
+            </a>
+            @*@Html.ActionLink("Details", "Details", new { id = item.TaskID }) |*@
+
+
+            <!-- button to delete task -->
+            <a href="@Url.Action("Delete", "Tasks", new { id = item.TaskID })">
+                <span class="glyphicon glyphicon-remove-circle"></span>
+            </a>
+        </li>
+                }
+
+</ul>
+
+@section scripts{
+    <script src="~/Scripts/custom.js"></script> <!-- we only want to load javascript on the page that is being used -->
+}

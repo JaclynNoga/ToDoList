@@ -1,0 +1,44 @@
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\roslyn\csc.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\roslyn\System.Collections.Immutable.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\roslyn\vbc.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\roslyn\VBCSCompiler.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\roslyn\VBCSCompiler.exe.config
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\To Do List.dll.config
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\To Do List.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\To Do List.pdb
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\Antlr3.Runtime.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\Microsoft.Web.Infrastructure.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\Newtonsoft.Json.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\System.Web.Helpers.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\System.Web.Mvc.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\System.Web.Optimization.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\System.Web.Razor.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\System.Web.WebPages.Deployment.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\System.Web.WebPages.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\System.Web.WebPages.Razor.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\WebGrease.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\System.Web.Helpers.xml
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\System.Web.Mvc.xml
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\System.Web.Optimization.xml
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\System.Web.Razor.xml
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\System.Web.WebPages.xml
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\System.Web.WebPages.Deployment.xml
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\System.Web.WebPages.Razor.xml
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\Antlr3.Runtime.pdb
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\Newtonsoft.Json.xml
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\obj\Debug\To Do List.csprojResolveAssemblyReference.cache
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\obj\Debug\To Do List.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\obj\Debug\To Do List.pdb
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\EntityFramework.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\EntityFramework.SqlServer.dll
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\EntityFramework.xml
+c:\users\wecancodeit\documents\visual studio 2015\Projects\To Do List\To Do List\bin\EntityFramework.SqlServer.xml
