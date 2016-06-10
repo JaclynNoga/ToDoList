@@ -37,3 +37,9 @@ button{
     border: none;
     background: none;
 }
+.dueDate{
+    font-size: smaller;
+}
+.taskName{
+    letter-spacing: 2px;
+}

@@ -16,7 +16,7 @@
     {
         <li>
             <!-- checkbox for if task is complete or not -->
-            <form method="post" action="@Url.Action("SetDone", new {id = item.TaskID})">
+            <form method="post" action="@Url.Action("SetDone", new { id = item.TaskID })">
                 <button class="mark-done">
                     @if (item.TaskDone)
                     {
@@ -30,45 +30,46 @@
                 @Html.Hidden("TaskDone", !item.TaskDone)
             </form>
 
-            <!-- Task Name -->
-            @Html.DisplayFor(modelItem => item.TaskName)
-
+            <span class="taskName">
+                <!-- Task Name -->
+                @Html.DisplayFor(modelItem => item.TaskName)
+            </span>
             <!-- display for due date and time -->
-            @{
-                <!-- display date in nice format -->
-                if (item.DueDate != null)
-                {
-                    var dueDate = (DateTime)item.DueDate;
-                    if (dueDate.Date == DateTime.Today)
+            <!-- display date in nice format -->
+            <span class="dueDate">
+                @{if (item.DueDate != null)
                     {
-                        @:Today
+                        var dueDate = (DateTime)item.DueDate;
+                        if (dueDate.Date == DateTime.Today)
+                        {
+                            @:Today
                     }
-                    else if (dueDate.Date == DateTime.Today.AddDays(1))
-                    {
-                        @:Tomorrow
+                        else if (dueDate.Date == DateTime.Today.AddDays(1))
+                        {
+                            @:Tomorrow
                     }
-                    else if (dueDate.Date < DateTime.Today)
-                    {
-                        var overdueDays = dueDate.Subtract(DateTime.Today);
-                        @:Overdue by
-                        @Html.DisplayFor(modelItem => item.DaysPastDue)
-                        @:days
+                        else if (dueDate.Date < DateTime.Today)
+                        {
+                            var overdueDays = dueDate.Subtract(DateTime.Today);
+                            @:Overdue by
+                            @Html.DisplayFor(modelItem => item.DaysPastDue)
+                            @:days
                     }
-                    else if (dueDate.Date < DateTime.Today.AddDays(7))
-                    {
-                        @dueDate.DayOfWeek
+                        else if (dueDate.Date < DateTime.Today.AddDays(7))
+                        {
+                            @dueDate.DayOfWeek
+                        }
+                        else if (dueDate.Date > DateTime.Today.AddYears(1))
+                        {
+                            @:A long time
                     }
-                    else if (dueDate.Date > DateTime.Today.AddYears(1))
-                    {
-                        @:A long time
-                    }
-                    else
-                    {
-                        @dueDate.ToString("MMMM d")
+                        else
+                        {
+                            @dueDate.ToString("MMMM d")
+                        }
                     }
                 }
-                <!-- display time tbc -->
-            }
+            </span>
 
             @*@Html.ActionLink("Edit", "Tasks", new { id = item.TaskID })*@
 
@@ -84,7 +85,7 @@
                 <span class="glyphicon glyphicon-remove-circle"></span>
             </a>
         </li>
-                }
+     }
 
 </ul>
 
